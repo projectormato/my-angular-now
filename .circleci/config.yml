@@ -26,4 +26,4 @@ jobs:
           command: sudo npm install -g now
       - run:
           name: deploy
-          command: now --name  --prod --confirm -t ${ZEIT_TOKEN}
+          command: now --name my-angular-now --prod --confirm -t ${ZEIT_TOKEN}
