@@ -21,3 +21,9 @@ jobs:
       - run:
           name: test
           command: npm run test
+      - run:
+          name: install now
+          command: sudo npm install -g now
+      - run:
+          name: deploy
+          command: now --name  --prod --confirm -t ${ZEIT_TOKEN}
